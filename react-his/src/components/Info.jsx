@@ -5,8 +5,8 @@ export const Info = ({data}) => {
 
     return (
         <div className="info">
-            <h3>Общее число сотрудников: {data.length}</h3>
-            <h3>Премию получат: {star}</h3>
+            <h3>Общее число откликов: {data.length}</h3>
+            <h3>Удовлетворяющие кандидаты: {star}</h3>
         </div>
     );
 }

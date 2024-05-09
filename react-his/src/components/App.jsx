@@ -1,5 +1,5 @@
 import {Component} from "react";
-import {Filter, Form, Info, List, Search} from ".";
+import {Filter, Form, Info, List, Search} from "../components/";
 import './App.css';
 
 export class App extends Component {

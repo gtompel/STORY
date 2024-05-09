@@ -4,7 +4,8 @@ import './App.css';
 export class Form extends Component {
     state = {
         name: '',
-        salary: ''
+        salary: '',
+        position: ''
     }
 
     onChange = (e) => {
@@ -15,22 +16,24 @@ export class Form extends Component {
 
     onSubmit = (e) => {
         e.preventDefault();
-        const {name, salary} = this.state;
+        const {name, salary, position} = this.state;
 
         if (name !== '' && salary !== '') {
-            this.props.onCreate(name, salary);
+            this.props.onCreate(name, salary, position);
 
             this.setState({
                 name: '',
-                salary: ''
+                salary: '',
+                position: ''
             })
         }
     }
 
     render() {
         const data = [
-            {key: 0, type: 'text', placeholder: 'Имя', name: 'name'},
-            {key: 1, type: 'number', placeholder: 'Зарплата', name: 'salary'}
+            {key: 0, type: 'text', placeholder: 'Имя Фамилия', name: 'name'},
+            {key: 1, type: 'number', placeholder: 'Зарплата', name: 'salary'},
+            {key: 2, type: 'text', placeholder: 'Должность', name: 'position'}
         ]
 
         const inputs = data.map(item => {

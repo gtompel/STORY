@@ -1,9 +1,9 @@
 import './App.css';
 
-export const Element = ({name, salary, star, onDelete, onStar}) => {
+export const Element = ({name, salary, position, star, onDelete, onStar}) => {
     const data = [
         // {key: 0, name: 'pen', text: 'Редактировать'},
-        {key: 1, name: 'star', text: 'Премировать', handler: onStar},
+        {key: 1, name: 'star', text: 'Избранный', handler: onStar},
         {key: 2, name: 'trash', text: 'Удалить', handler: onDelete}
     ]
 
@@ -26,6 +26,7 @@ export const Element = ({name, salary, star, onDelete, onStar}) => {
         <li className={`list-group-item d-flex justify-content-between ${star ? 'star' : ''}`}>
             <span className="list-group-item-label">{name}</span>
             <div className="list-group-item-input value">{salary}$</div>
+            <div className="list-group-item-label">{position}</div>
             <div className='d-flex justify-content-center align-items-center'>
                 {buttons}
             </div>

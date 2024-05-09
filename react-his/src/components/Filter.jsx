@@ -2,9 +2,9 @@ import './App.css';
 
 export const Filter = ({active, toggleState}) => {
     const data = [
-        {key: 0, name: 'all', text: 'Все сотрудники'},
-        {key: 1, name: 'star', text: 'Премированные'},
-        {key: 2, name: 'rich', text: 'Больше 1000$'}
+        {key: 0, name: 'all', text: 'Все соискатели'},
+        {key: 1, name: 'star', text: 'Избранные'},
+        {key: 2, name: 'rich', text: 'Много хотят $'}
     ]
 
     const onClick = (e) => {

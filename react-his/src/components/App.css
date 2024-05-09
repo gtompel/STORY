@@ -1,7 +1,8 @@
 .app {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: auto;
   padding: 20px;
+  background-color: #A0AECD;
 }
 .list-group-item {
   padding: 15px 20px;
@@ -71,10 +72,10 @@
 .app-add-form {
   margin-top: 30px;
   padding: 25px;
-  background-color: #3d5a80;
+  background-color: #323841;
   border-radius: 4px;
   box-shadow: 15px 15px 30px rgba(0,0,0, .15);
-  color: #fff;
+  color: #000000;
 }
 
 .add-form {
@@ -87,14 +88,14 @@
 }
 .info {
   padding: 25px;
-  background-color: #3d5a80;
+  background-color: #323841;
   border-radius: 4px;
   box-shadow: 15px 15px 30px rgba(0,0,0, .15);
-  color: #fff;
+  color: #000000;
 }
 .app-list {
   margin-top: 30px;
-  background-color: #3d5a80;
+  background-color: #323841;
   border-radius: 4px;
   box-shadow: 15px 15px 30px rgba(0,0,0, .15);
 }
@@ -102,7 +103,7 @@
 .error {
   padding: 15px 20px;
   min-height: 72px;
-  background-color: white;
+  background-color: rgb(243, 243, 243);
   border: 1px solid rgba(0,0,0,.125);
   border-radius: 4px;
   color: black;
@@ -112,8 +113,8 @@
 .search-panel {
   margin-top: 30px;
   padding: 25px;
-  background-color: #3d5a80;
+  background-color: #323841;
   border-radius: 4px;
   box-shadow: 15px 15px 30px rgba(0,0,0, .15);
-  color: #fff;
+  color: #000000;
 }

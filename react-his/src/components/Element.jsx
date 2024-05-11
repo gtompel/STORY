@@ -2,7 +2,7 @@ import './App.css';
 
 export const Element = ({name, salary, position, star, onDelete, onStar}) => {
     const data = [
-        // {key: 0, name: 'pen', text: 'Редактировать'},
+        {key: 0, name: 'pen', text: 'История'},
         {key: 1, name: 'star', text: 'Избранный', handler: onStar},
         {key: 2, name: 'trash', text: 'Удалить', handler: onDelete}
     ]
